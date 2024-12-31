@@ -2,20 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
+
+.navbar {
+    position: relative; /* Ensure that the search bar is positioned correctly within the navbar */
   }
-}
+  
+  .search-bar {
+    width: 310px;
+    height: 54px;
+    position: absolute;
+    top: 33px;
+    left: 978px;
+    gap: 0px;
+    border-radius: 27px 0px 0px 0px;
+    border: 1px solid transparent;
+    border-top: 1px solid #000; /* Adjust to match your design */
+    opacity: 0; /* Initially hidden, can be changed with JS */
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-bar:focus {
+    outline: none; /* Prevents default focus outline */
+  }
+  
+  h3 {
+    width: 225px;
+height: 104px;
+top: 198px;
+left: 850px;
+gap: 0px;
+opacity: 0px;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  }
