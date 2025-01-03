@@ -16,7 +16,7 @@ interface BlogCardProps {
 const BlogCard: React.FC<BlogCardProps> = ({ imageSrc }) => {
   return (
     <div>
-      <img src={imageSrc} alt="Blog Image" className="w-full h-auto rounded-lg" />
+      <Image src={imageSrc} alt="Blog Image" width={500} height={300} className="w-full h-auto rounded-lg" />
     </div>
   );
 };
